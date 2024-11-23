@@ -18,3 +18,6 @@ test:
 
 run:
 	poetry run gendiff gendiff/scripts/file1.json gendiff/scripts/file2.json
+
+report:
+	./gradlew jacocoTestReport
