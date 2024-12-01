@@ -17,7 +17,7 @@ test:
 	poetry run pytest
 
 run:
-	poetry run gendiff gendiff/scripts/file1.json gendiff/scripts/file2.json
+	poetry run gendiff tests/fixtures/file1.json tests/fixtures/file2.json
 
 report:
 	./gradlew jacocoTestReport
