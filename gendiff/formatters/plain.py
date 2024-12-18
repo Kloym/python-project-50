@@ -3,7 +3,7 @@ def format_value_plain(value):
         if value is None:
             return 'null'
         elif isinstance(value, str):
-            return f"'{value}'"
+            return "'{0}'".format(value)
         elif isinstance(value, bool):
             return str(value).lower()
         elif isinstance(value, int):
