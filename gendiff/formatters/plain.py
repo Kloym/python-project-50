@@ -1,13 +1,15 @@
 def format_value_plain(value):
-    if not isinstance(value, dict):
-        if value is None:
-            return 'null'
-        elif isinstance(value, str):
-            return f"'{value}'"
-        elif type(value) in [bool, int, float]:
-            return str(value).lower()
-    else:
+    if isinstance(value, dict):
         return '[complex value]'
+    if value is True:
+        return "true"
+    if value is False:
+        return "false"
+    if value is None:
+        return "null"
+    if isinstance(value, (int, float)) or value == "0":
+        return str(value)
+    return f"'{value}'"
 
 
 def plain_format(data: dict, prefix=''):
