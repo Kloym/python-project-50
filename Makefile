@@ -16,8 +16,5 @@ lint:
 test:
 	poetry run pytest
 
-run:
-	poetry run gendiff tests/fixtures/file1.json tests/fixtures/file2.json
-
 report:
 	./gradlew jacocoTestReport
