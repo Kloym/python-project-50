@@ -1,0 +1,28 @@
+{
+  "follow": {
+    "key": "follow",
+    "vertex_type": "removed",
+    "value": false
+  },
+  "host": {
+    "key": "host",
+    "vertex_type": "unchanged",
+    "value": "hexlet.io"
+  },
+  "proxy": {
+    "key": "proxy",
+    "vertex_type": "removed",
+    "value": "123.234.53.22"
+  },
+  "timeout": {
+    "key": "timeout",
+    "vertex_type": "changed",
+    "value_old": 50,
+    "value_new": 20
+  },
+  "verbose": {
+    "key": "verbose",
+    "vertex_type": "added",
+    "value": true
+  }
+}

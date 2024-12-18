@@ -1,0 +1,116 @@
+{
+  "common": {
+    "key": "common",
+    "vertex_type": "nested",
+    "value": {
+      "follow": {
+        "key": "follow",
+        "vertex_type": "added",
+        "value": false
+      },
+      "setting1": {
+        "key": "setting1",
+        "vertex_type": "unchanged",
+        "value": "Value 1"
+      },
+      "setting2": {
+        "key": "setting2",
+        "vertex_type": "removed",
+        "value": 200
+      },
+      "setting3": {
+        "key": "setting3",
+        "vertex_type": "changed",
+        "value_old": true,
+        "value_new": null
+      },
+      "setting4": {
+        "key": "setting4",
+        "vertex_type": "added",
+        "value": "blah blah"
+      },
+      "setting5": {
+        "key": "setting5",
+        "vertex_type": "added",
+        "value": {
+          "key5": "value5"
+        }
+      },
+      "setting6": {
+        "key": "setting6",
+        "vertex_type": "nested",
+        "value": {
+          "doge": {
+            "key": "doge",
+            "vertex_type": "nested",
+            "value": {
+              "wow": {
+                "key": "wow",
+                "vertex_type": "changed",
+                "value_old": "",
+                "value_new": "so much"
+              }
+            }
+          },
+          "key": {
+            "key": "key",
+            "vertex_type": "unchanged",
+            "value": "value"
+          },
+          "ops": {
+            "key": "ops",
+            "vertex_type": "added",
+            "value": "vops"
+          }
+        }
+      }
+    }
+  },
+  "group1": {
+    "key": "group1",
+    "vertex_type": "nested",
+    "value": {
+      "baz": {
+        "key": "baz",
+        "vertex_type": "changed",
+        "value_old": "bas",
+        "value_new": "bars"
+      },
+      "foo": {
+        "key": "foo",
+        "vertex_type": "unchanged",
+        "value": "bar"
+      },
+      "nest": {
+        "key": "nest",
+        "vertex_type": "changed",
+        "value_old": {
+          "key": "value"
+        },
+        "value_new": "str"
+      }
+    }
+  },
+  "group2": {
+    "key": "group2",
+    "vertex_type": "removed",
+    "value": {
+      "abc": 12345,
+      "deep": {
+        "id": 45
+      }
+    }
+  },
+  "group3": {
+    "key": "group3",
+    "vertex_type": "added",
+    "value": {
+      "deep": {
+        "id": {
+          "number": 45
+        }
+      },
+      "fee": 100500
+    }
+  }
+}
