@@ -1,8 +1,6 @@
 def find_diff(data1: dict, data2: dict):
-    if data1 is None or data2 is None:
-        return {}
     diff_dict = {}
-    united_data = sorted(set(data1.keys()) | set(data2.keys()))
+    united_data = sorted(data1 | data2)
     for key in united_data:
         if (key in data1 and key in data2
                 and data1[key] == data2[key]):
