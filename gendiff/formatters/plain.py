@@ -3,11 +3,9 @@ def format_value_plain(value):
         if value is None:
             return 'null'
         elif isinstance(value, str):
-            return "'{0}'".format(value)
-        elif isinstance(value, bool):
-            return str(value).lower()
-        elif isinstance(value, int):
             return f"'{value}'"
+        elif type(value) in [bool, int, float]:
+            return str(value).lower()
     else:
         return '[complex value]'
 
