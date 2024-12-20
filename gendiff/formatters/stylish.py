@@ -14,9 +14,8 @@ def format_stylish(diff: dict, replacer=" ", space_counts=2):
                     f'{k}: {walk(v["value"], depth + 1)}'
                 )
             elif v["vertex_type"] == "unchanged":
-                lines.append(
-                    f"{indent}"
-                    f'{build_line(v, "value", depth)}')
+                lines.append(f"{indent}"
+                             f'{build_line(v, "value", depth)}')
             elif v["vertex_type"] == "changed":
                 lines.append(f"{indent}"
                              f'{build_line(v, "value_old", depth, "- ")}')
