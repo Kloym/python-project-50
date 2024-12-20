@@ -2,8 +2,7 @@ def find_diff(data1: dict, data2: dict):
     diff_dict = {}
     united_data = sorted(data1 | data2)
     for key in united_data:
-        if (key in data1 and key in data2
-                and data1[key] == data2[key]):
+        if key in data1 and key in data2 and data1[key] == data2[key]:
             diff_dict[key] = {
                 "key": key,
                 "vertex_type": "unchanged",

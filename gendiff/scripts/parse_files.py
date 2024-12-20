@@ -1,7 +1,6 @@
-import json
 import argparse
+import json
 import yaml
-
 
 parser = argparse.ArgumentParser(
     description="Compares two configuration " "files and shows a difference."
