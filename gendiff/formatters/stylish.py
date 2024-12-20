@@ -10,13 +10,18 @@ def format_stylish(diff: dict, replacer=" ", space_counts=2):
         for k, v in data.items():
             if v["vertex_type"] == "nested":
                 lines.append(
-                    f"{indent_for_changed}" f'{k}: {walk(v["value"], depth + 1)}'
+                    f"{indent_for_changed}"
+                    f'{k}: {walk(v["value"], depth + 1)}'
                 )
             elif v["vertex_type"] == "unchanged":
-                lines.append(f'{indent}{build_line(v, "value", depth)}')
+                lines.append(
+                    f"{indent}"
+                    f'{build_line(v, "value", depth)}')
             elif v["vertex_type"] == "changed":
-                lines.append(f"{indent}" f'{build_line(v, "value_old", depth, "- ")}')
-                lines.append(f"{indent}" f'{build_line(v, "value_new", depth, "+ ")}')
+                lines.append(f"{indent}"
+                             f'{build_line(v, "value_old", depth, "- ")}')
+                lines.append(f"{indent}"
+                             f'{build_line(v, "value_new", depth, "+ ")}')
             elif v["vertex_type"] == "added":
                 lines.append(f'{indent}{build_line(v, "value", depth, "+ ")}')
             elif v["vertex_type"] == "removed":
