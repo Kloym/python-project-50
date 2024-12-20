@@ -1,5 +1,5 @@
-import yaml
 import json
+import yaml
 
 
 def get_file_format(file_name):
