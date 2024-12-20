@@ -1,5 +1,11 @@
 import json
 import yaml
+import argparse
+
+
+parser = argparse.ArgumentParser(
+    description="Compares two configuration " "files and shows a difference."
+)
 
 
 def read(path):
