@@ -1,16 +1,5 @@
 import json
 import yaml
-import argparse
-
-
-parser = argparse.ArgumentParser(
-    description="Compares two configuration " "files and shows a difference."
-)
-
-
-def read(path):
-    with open(path) as file:
-        return file.read()
 
 
 def get_file_format(file_name):
